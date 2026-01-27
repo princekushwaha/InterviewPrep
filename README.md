@@ -31,7 +31,7 @@ Store elements in a hash map as you scan. For each element, check if its complem
 **Pattern Used:**  
 Hashing
 
-**Code:** `array/01_TwoSum.cs`
+**Code:** [array/01_TwoSum.cs](array/01_TwoSum.cs)
 
 ---
 
@@ -51,7 +51,7 @@ Use a set to track seen elements. If you encounter an element already in the set
 **Pattern Used:**  
 Hashing / Set
 
-**Code:** `array/02_ContainsDuplicate.cs`
+**Code:** [array/02_ContainsDuplicate.cs](array/02_ContainsDuplicate.cs)
 
 ---
 
@@ -71,7 +71,7 @@ Model the array as a linked list and apply cycle detection. The duplicate number
 **Pattern Used:**  
 Cycle Detection
 
-**Code:** `array/03_FindDuplicate.cs`
+**Code:** [array/03_FindDuplicate.cs](array/03_FindDuplicate.cs)
 
 ---
 
@@ -91,7 +91,7 @@ Dutch National Flag: Three-way partitioning with one pass. Maintain regions for 
 **Pattern Used:**  
 Two Pointers / Partitioning
 
-**Code:** `array/04_SortColors.cs`
+**Code:** [array/04_SortColors.cs](array/04_SortColors.cs)
 
 ---
 
@@ -111,7 +111,7 @@ Two-pointer technique: One pointer tracks position for unique elements, another 
 **Pattern Used:**  
 Two Pointers
 
-**Code:** `array/05_RemoveDuplicates.cs`
+**Code:** [array/05_RemoveDuplicates.cs](array/05_RemoveDuplicates.cs)
 
 ---
 
@@ -131,7 +131,7 @@ Kadane's Algorithm: Track running sum and global maximum. Reset running sum when
 **Pattern Used:**  
 Kadane / Dynamic Programming
 
-**Code:** `array/06_MaximumSubarray.cs`
+**Code:** [array/06_MaximumSubarray.cs](array/06_MaximumSubarray.cs)
 
 ---
 
@@ -151,7 +151,7 @@ Slidding Window: Expand window until sum meets target, then shrink from left to 
 **Pattern Used:**  
 Sliding Window
 
-**Code:** `array/07_MinSizeSubarraySum.cs`
+**Code:** [array/07_MinSizeSubarraySum.cs](array/07_MinSizeSubarraySum.cs)
 
 ---
 
@@ -171,7 +171,7 @@ Prefix Sum with hash map: Track how many times each prefix sum has appeared. **K
 **Pattern Used:**  
 Prefix Sum
 
-**Code:** `array/08_SubarraySumEqualsK.cs`
+**Code:** [array/08_SubarraySumEqualsK.cs](array/08_SubarraySumEqualsK.cs)
 
 ---
 
@@ -191,7 +191,7 @@ Boyer-Moore Voting: Use cancellation strategy - pair up different elements. **Ke
 **Pattern Used:**  
 Voting Algorithm
 
-**Code:** `array/09_MajorityElement.cs`
+**Code:** [array/09_MajorityElement.cs](array/09_MajorityElement.cs)
 
 ---
 
@@ -211,7 +211,7 @@ Two-pointer partitioning: Collect all non-zero elements at the front; zeros natu
 **Pattern Used:**  
 Two Pointers
 
-**Code:** `array/10_MoveZeroes.cs`
+**Code:** [array/10_MoveZeroes.cs](array/10_MoveZeroes.cs)
 
 ---
 
@@ -231,7 +231,7 @@ Track current streak and global maximum. Reset streak counter when you hit a zer
 **Pattern Used:**  
 Linear Scan
 
-**Code:** `array/11_MaxConsecutiveOnes.cs`
+**Code:** [array/11_MaxConsecutiveOnes.cs](array/11_MaxConsecutiveOnes.cs)
 
 ---
 
@@ -251,7 +251,7 @@ Greedy: Track the minimum price seen so far and calculate potential profit at ea
 **Pattern Used:**  
 Greedy
 
-**Code:** `array/12_BestTimeToBuySellStock.cs`
+**Code:** [array/12_BestTimeToBuySellStock.cs](array/12_BestTimeToBuySellStock.cs)
 
 ---
 
@@ -271,7 +271,7 @@ Precompute maximum heights on left and right for each position. Water trapped = 
 **Pattern Used:**  
 Preprocessing
 
-**Code:** `array/13_TrappingRainWater.cs`
+**Code:** [array/13_TrappingRainWater.cs](array/13_TrappingRainWater.cs)
 
 ---
 
@@ -291,7 +291,7 @@ Cyclic Sort: Place each number at its natural index position. First mismatched i
 **Pattern Used:**  
 In-place Hashing
 
-**Code:** `array/14_FirstMissingPositive.cs`
+**Code:** [array/14_FirstMissingPositive.cs](array/14_FirstMissingPositive.cs)
 
 ---
 
@@ -311,7 +311,7 @@ Sort array, fix one element, then use two-pointer technique to find pairs that c
 **Pattern Used:**  
 Two Pointers
 
-**Code:** `array/15_ThreeSum.cs`
+**Code:** [array/15_ThreeSum.cs](array/15_ThreeSum.cs)
 
 ---
 
@@ -331,7 +331,7 @@ Sort array, fix two elements with nested loops, then use two-pointer for remaini
 **Pattern Used:**  
 Two Pointers
 
-**Code:** `array/16_FourSum.cs`
+**Code:** [array/16_FourSum.cs](array/16_FourSum.cs)
 
 ---
 
@@ -350,7 +350,7 @@ Traverse right to left, maintaining the maximum seen so far. Any element greater
 **Pattern Used:**  
 Greedy
 
-**Code:** `array/17_LeadersInArray.cs`
+**Code:** [array/17_LeadersInArray.cs](array/17_LeadersInArray.cs)
 
 ---
 
@@ -370,7 +370,7 @@ Find pivot (first descending pair from right), swap with next larger element, th
 **Pattern Used:**  
 Permutation Logic
 
-**Code:** `array/18_NextPermutation.cs`
+**Code:** [array/18_NextPermutation.cs](array/18_NextPermutation.cs)
 
 ---
 
@@ -390,7 +390,7 @@ Extended Boyer-Moore for two candidates. Find potential candidates via voting, t
 **Pattern Used:**  
 Voting Algorithm
 
-**Code:** `array/19_MajorityElementII.cs`
+**Code:** [array/19_MajorityElementII.cs](array/19_MajorityElementII.cs)
 
 ---
 
@@ -410,7 +410,7 @@ Track both maximum and minimum product ending at each position. Consider all thr
 **Pattern Used:**  
 Dynamic Programming
 
-**Code:** `array/20_MaximumProductSubarray.cs`
+**Code:** [array/20_MaximumProductSubarray.cs](array/20_MaximumProductSubarray.cs)
 
 ---
 
@@ -430,7 +430,7 @@ Transform problem: Convert 0→-1, now find longest subarray with sum 0. Use pre
 **Pattern Used:**  
 Prefix Sum
 
-**Code:** `array/21_ContiguousArray.cs`
+**Code:** [array/21_ContiguousArray.cs](array/21_ContiguousArray.cs)
 
 ---
 
@@ -450,7 +450,7 @@ Two cases: maximum is either non-wrapping (use Kadane) or wrapping (total - mini
 **Pattern Used:**  
 Kadane / Greedy
 
-**Code:** `array/22_MaxCircularSubarray.cs`
+**Code:** [array/22_MaxCircularSubarray.cs](array/22_MaxCircularSubarray.cs)
 
 ---
 
@@ -470,7 +470,7 @@ Sort intervals by start time, then merge overlapping ones in a single pass. **Ke
 **Pattern Used:**  
 Sorting + Greedy
 
-**Code:** `array/23_MergeIntervals.cs`
+**Code:** [array/23_MergeIntervals.cs](array/23_MergeIntervals.cs)
 
 ---
 
@@ -490,7 +490,7 @@ Dynamic Programming: For each position, find the longest increasing subsequence 
 **Pattern Used:**  
 Dynamic Programming
 
-**Code:** `array/24_LIS_DP.cs`
+**Code:** [array/24_LIS_DP.cs](array/24_LIS_DP.cs)
 
 ---
 
@@ -509,7 +509,7 @@ Greedy + Binary Search: Maintain smallest possible tail for each length. Use bin
 **Pattern Used:**  
 Binary Search + Greedy
 
-**Code:** `array/25_LIS_BinarySearch.cs`
+**Code:** [array/25_LIS_BinarySearch.cs](array/25_LIS_BinarySearch.cs)
 
 ---
 
@@ -529,6 +529,6 @@ Two-pass: First pass computes prefix products, second pass computes suffix produ
 **Pattern Used:**  
 Prefix / Suffix
 
-**Code:** `array/26_ProductExceptSelf.cs`
+**Code:** [array/26_ProductExceptSelf.cs](array/26_ProductExceptSelf.cs)
 
 ---
