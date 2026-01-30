@@ -532,3 +532,297 @@ Prefix / Suffix
 **Code:** [array/26_ProductExceptSelf.cs](array/26_ProductExceptSelf.cs)
 
 ---
+## 27. Reverse the Array
+**Level:** Easy  
+**GFG:** https://www.geeksforgeeks.org/write-a-program-to-reverse-an-array-or-string/
+
+**Problem Statement:**  
+Reverse the given array in-place.
+
+**Brute Force Approach:**  
+Create a new array and copy elements in reverse order.  
+Time: O(n), Space: O(n)
+
+**Optimal Approach:**  
+Use two pointers (start & end) and swap elements while moving inward.  
+Time: O(n), Space: O(1)
+
+**Pattern Used:**  
+Two Pointers
+
+**Code:** [array/27_ReverseArray.cs](array/27_ReverseArray.cs)
+
+---
+
+## 28. Find Maximum and Minimum in an Array
+**Level:** Easy  
+**GFG:** https://www.geeksforgeeks.org/maximum-and-minimum-in-an-array/
+
+**Problem Statement:**  
+Find the minimum and maximum element in the array.
+
+**Brute Force Approach:**  
+Sort the array and pick first and last elements.
+
+**Optimal Approach:**  
+Single linear scan maintaining current min and max.  
+Time: O(n), Space: O(1)
+
+**Pattern Used:**  
+Linear Scan
+
+**Code:** [array/28_MinMaxArray.cs](array/28_MinMaxArray.cs)
+
+---
+
+## 29. Kth Minimum / Maximum Element in an Array
+**Level:** Medium  
+**GFG:** https://www.geeksforgeeks.org/kth-smallestlargest-element-unsorted-array/
+
+**Problem Statement:**  
+Find the kth smallest or largest element in an unsorted array.
+
+**Brute Force Approach:**  
+Sort the array and return kth element.
+
+**Optimal Approach:**  
+Quickselect / Heap-based selection. Average O(n).
+
+**Pattern Used:**  
+Selection Algorithm
+
+**Code:** [array/29_KthElement.cs](array/29_KthElement.cs)
+
+---
+
+## 30. Jump Game
+**Level:** Medium  
+**LeetCode:** https://leetcode.com/problems/jump-game/
+
+**Problem Statement:**  
+Determine if you can reach the last index.
+
+**Brute Force Approach:**  
+Recursive exploration / DP.
+
+**Optimal Approach:**  
+Greedy – track farthest reachable index.
+
+**Pattern Used:**  
+Greedy
+
+**Code:** [array/30_JumpGame.cs](array/30_JumpGame.cs)
+
+---
+
+## 31. Jump Game II
+**Level:** Hard  
+**LeetCode:** https://leetcode.com/problems/jump-game-ii/
+
+**Problem Statement:**  
+Find the minimum number of jumps to reach the end.
+
+**Brute Force Approach:**  
+Recursive / DP.
+
+**Optimal Approach:**  
+Greedy range expansion (BFS-like levels).
+
+**Pattern Used:**  
+Greedy / BFS Levels
+
+**Code:** [array/31_JumpGameII.cs](array/31_JumpGameII.cs)
+
+---
+
+## 32. Union of Two Arrays
+**Level:** Easy  
+**GFG:** https://www.geeksforgeeks.org/find-union-and-intersection-of-two-unsorted-arrays/
+
+**Problem Statement:**  
+Find the union of two arrays.
+
+**Brute Force Approach:**  
+Merge arrays and remove duplicates.
+
+**Optimal Approach:**  
+Use HashSet to store distinct elements.
+
+**Pattern Used:**  
+Hashing
+
+**Code:** [array/32_UnionOfArrays.cs](array/32_UnionOfArrays.cs)
+
+---
+
+## 33. Intersection of Two Arrays
+**Level:** Easy–Medium  
+**LeetCode:** https://leetcode.com/problems/intersection-of-two-arrays/
+
+**Problem Statement:**  
+Find the intersection of two arrays (distinct elements).
+
+**Brute Force Approach:**  
+Check each element of one array in the other.
+
+**Optimal Approach:**  
+HashSet-based lookup.
+
+**Pattern Used:**  
+Hashing
+
+**Code:** [array/33_IntersectionOfArrays.cs](array/33_IntersectionOfArrays.cs)
+
+---
+
+## 34. Container With Most Water
+**Level:** Medium  
+**LeetCode:** https://leetcode.com/problems/container-with-most-water/
+
+**Problem Statement:**  
+Find two lines that together with the x-axis form a container holding the maximum water.
+
+**Brute Force Approach:**  
+Check all pairs of lines and compute area.  
+Time: O(n²)
+
+**Optimal Approach:**  
+Two pointers from both ends, move the smaller height inward.  
+Time: O(n), Space: O(1)
+
+**Pattern Used:**  
+Two Pointers / Greedy
+
+**Code:** [array/34_ContainerWithMostWater.cs](array/34_ContainerWithMostWater.cs)
+
+---
+
+## 35. Trapping Rain Water
+**Level:** Hard  
+**LeetCode:** https://leetcode.com/problems/trapping-rain-water/
+
+**Problem Statement:**  
+Compute how much water can be trapped between bars after raining.
+
+**Brute Force Approach:**  
+For each index, find max to left and right.  
+Time: O(n²)
+
+**Optimal Approach:**  
+Prefix max + suffix max or two-pointer technique.  
+Time: O(n), Space: O(n) / O(1)
+
+**Pattern Used:**  
+Prefix / Two Pointers
+
+**Code:** [array/35_TrappingRainWater.cs](array/35_TrappingRainWater.cs)
+
+---
+
+## 36. Product of Array Except Self
+**Level:** Medium  
+**LeetCode:** https://leetcode.com/problems/product-of-array-except-self/
+
+**Problem Statement:**  
+Return an array where each element is the product of all other elements except itself.
+
+**Brute Force Approach:**  
+For each index, multiply all other elements.  
+Time: O(n²)
+
+**Optimal Approach:**  
+Prefix and suffix products.  
+Time: O(n), Space: O(1) extra
+
+**Pattern Used:**  
+Prefix / Suffix
+
+**Code:** [array/36_ProductExceptSelf.cs](array/36_ProductExceptSelf.cs)
+
+---
+
+## 37. First Missing Positive
+**Level:** Hard  
+**LeetCode:** https://leetcode.com/problems/first-missing-positive/
+
+**Problem Statement:**  
+Find the smallest missing positive integer in an unsorted array.
+
+**Brute Force Approach:**  
+Sort and scan positives.  
+Time: O(n log n)
+
+**Optimal Approach:**  
+Index placement (cyclic sort idea).  
+Time: O(n), Space: O(1)
+
+**Pattern Used:**  
+Cyclic Sort / Index Mapping
+
+**Code:** [array/37_FirstMissingPositive.cs](array/37_FirstMissingPositive.cs)
+
+---
+
+## 38. Majority Element (> n/2)
+**Level:** Medium  
+**LeetCode:** https://leetcode.com/problems/majority-element/
+
+**Problem Statement:**  
+Find the element that appears more than n/2 times.
+
+**Brute Force Approach:**  
+Count frequencies using map.
+
+**Optimal Approach:**  
+Boyer–Moore Voting Algorithm.  
+Time: O(n), Space: O(1)
+
+**Pattern Used:**  
+Voting Algorithm
+
+**Code:** [array/38_MajorityElement.cs](array/38_MajorityElement.cs)
+
+---
+
+## 39. Majority Element II (> n/3)
+**Level:** Hard  
+**LeetCode:** https://leetcode.com/problems/majority-element-ii/
+
+**Problem Statement:**  
+Find all elements that appear more than n/3 times.
+
+**Brute Force Approach:**  
+Frequency map.
+
+**Optimal Approach:**  
+Extended Boyer–Moore (two candidates + verification).  
+Time: O(n), Space: O(1)
+
+**Pattern Used:**  
+Voting Algorithm
+
+**Code:** [array/39_MajorityElementII.cs](array/39_MajorityElementII.cs)
+
+---
+
+## 40. Merge Intervals
+**Level:** Medium  
+**LeetCode:** https://leetcode.com/problems/merge-intervals/
+
+**Problem Statement:**  
+Merge all overlapping intervals.
+
+**Brute Force Approach:**  
+Compare every interval pair.
+
+**Optimal Approach:**  
+Sort by start time and merge greedily.  
+Time: O(n log n)
+
+**Pattern Used:**  
+Sorting / Greedy
+
+**Code:** [array/40_MergeIntervals.cs](array/40_MergeIntervals.cs)
+
+---
+
