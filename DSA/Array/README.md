@@ -1,7 +1,7 @@
 
-# DSA Array Interview Preparation – Solved Problems (26)
+# DSA Array Interview Preparation – Solved Problems (41)
 
-This repository contains **26 array problems** solved during interview preparation.
+This repository contains **41 array problems** solved during interview preparation.
 
 For **each problem**, the following is documented:
 - Problem statement
@@ -64,6 +64,9 @@ Given an array containing n+1 integers where each integer is between 1 and n, fi
 
 **Brute Force Approach:**  
 Sort the array and check adjacent elements.
+
+**Other Approach**
+Each element points to some index nums[i] points to nums[i] - 1. When you encounter some element negate it.
 
 **Optimal Approach:**  
 Model the array as a linked list and apply cycle detection. The duplicate number is the entry point to the cycle. **Key insight:** Treat indices as pointers - duplicate creates multiple paths to same node. **O(n) time, O(1) space.**
@@ -697,132 +700,142 @@ Two Pointers / Greedy
 
 ---
 
-## 35. Trapping Rain Water
-**Level:** Hard  
-**LeetCode:** https://leetcode.com/problems/trapping-rain-water/
-
-**Problem Statement:**  
-Compute how much water can be trapped between bars after raining.
-
-**Brute Force Approach:**  
-For each index, find max to left and right.  
-Time: O(n²)
-
-**Optimal Approach:**  
-Prefix max + suffix max or two-pointer technique.  
-Time: O(n), Space: O(n) / O(1)
-
-**Pattern Used:**  
-Prefix / Two Pointers
-
-**Code:** [array/35_TrappingRainWater.cs](array/35_TrappingRainWater.cs)
-
----
-
-## 36. Product of Array Except Self
+## 35. Best Time to Buy and Sell Stock II
 **Level:** Medium  
-**LeetCode:** https://leetcode.com/problems/product-of-array-except-self/
+**LeetCode:** https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/
 
 **Problem Statement:**  
-Return an array where each element is the product of all other elements except itself.
+Find the maximum profit from multiple buy and sell transactions (can buy and sell multiple times).
 
 **Brute Force Approach:**  
-For each index, multiply all other elements.  
-Time: O(n²)
+Try all possible combinations of buy-sell transactions. Time: O(n!)
 
 **Optimal Approach:**  
-Prefix and suffix products.  
-Time: O(n), Space: O(1) extra
+Greedy: Sum up all positive differences between consecutive days. Capture every upward price movement. **Key insight:** Every profitable segment contributes to total profit. **O(n) time, O(1) space.**
 
 **Pattern Used:**  
-Prefix / Suffix
+Greedy
 
-**Code:** [array/36_ProductExceptSelf.cs](array/36_ProductExceptSelf.cs)
+**Code:** [array/35_StockBuySellII.cs](array/35_StockBuySellII.cs)
 
 ---
 
-## 37. First Missing Positive
-**Level:** Hard  
-**LeetCode:** https://leetcode.com/problems/first-missing-positive/
-
-**Problem Statement:**  
-Find the smallest missing positive integer in an unsorted array.
-
-**Brute Force Approach:**  
-Sort and scan positives.  
-Time: O(n log n)
-
-**Optimal Approach:**  
-Index placement (cyclic sort idea).  
-Time: O(n), Space: O(1)
-
-**Pattern Used:**  
-Cyclic Sort / Index Mapping
-
-**Code:** [array/37_FirstMissingPositive.cs](array/37_FirstMissingPositive.cs)
-
----
-
-## 38. Majority Element (> n/2)
+## 36. Rotate Array
 **Level:** Medium  
-**LeetCode:** https://leetcode.com/problems/majority-element/
+**LeetCode:** https://leetcode.com/problems/rotate-array/
 
 **Problem Statement:**  
-Find the element that appears more than n/2 times.
+Rotate an array to the right by k steps.
 
 **Brute Force Approach:**  
-Count frequencies using map.
+Rotate one element at a time, k times. Time: O(n*k)
 
 **Optimal Approach:**  
-Boyer–Moore Voting Algorithm.  
-Time: O(n), Space: O(1)
+Triple reversal: Reverse entire array, then reverse first k elements, then reverse remaining. **Key insight:** Reversal repositions elements without extra space. **O(n) time, O(1) space.**
 
 **Pattern Used:**  
-Voting Algorithm
+Array Reversal
 
-**Code:** [array/38_MajorityElement.cs](array/38_MajorityElement.cs)
+**Code:** [array/36_RotateArray.cs](array/36_RotateArray.cs)
 
 ---
 
-## 39. Majority Element II (> n/3)
-**Level:** Hard  
-**LeetCode:** https://leetcode.com/problems/majority-element-ii/
+## 37. Merge Sorted Array
+**Level:** Easy  
+**LeetCode:** https://leetcode.com/problems/merge-sorted-array/
 
 **Problem Statement:**  
-Find all elements that appear more than n/3 times.
+Merge two sorted arrays into the first array (which has enough space).
 
 **Brute Force Approach:**  
-Frequency map.
+Merge into auxiliary array and copy back. Time: O(m+n), Space: O(m+n)
 
 **Optimal Approach:**  
-Extended Boyer–Moore (two candidates + verification).  
-Time: O(n), Space: O(1)
+Three pointers starting from the end, filling from back to front. **Key insight:** Merging backward avoids overwriting unprocessed elements. **O(m+n) time, O(1) space.**
 
 **Pattern Used:**  
-Voting Algorithm
+Two Pointers
 
-**Code:** [array/39_MajorityElementII.cs](array/39_MajorityElementII.cs)
+**Code:** [array/37_MergeSortedArray.cs](array/37_MergeSortedArray.cs)
 
 ---
 
-## 40. Merge Intervals
+## 38. Longest Substring Without Repeating Characters
 **Level:** Medium  
-**LeetCode:** https://leetcode.com/problems/merge-intervals/
+**LeetCode:** https://leetcode.com/problems/longest-substring-without-repeating-characters/
 
 **Problem Statement:**  
-Merge all overlapping intervals.
+Find the length of the longest substring without repeating characters.
 
 **Brute Force Approach:**  
-Compare every interval pair.
+Check all substrings for uniqueness. Time: O(n³)
 
 **Optimal Approach:**  
-Sort by start time and merge greedily.  
-Time: O(n log n)
+Sliding window with hash map tracking character positions. Expand right, contract left when duplicate found. **Key insight:** Use window to maintain valid substring. **O(n) time, O(min(n, alphabet)) space.**
 
 **Pattern Used:**  
-Sorting / Greedy
+Sliding Window
 
-**Code:** [array/40_MergeIntervals.cs](array/40_MergeIntervals.cs)
+**Code:** [array/38_LongestSubstringWithoutRepeat.cs](array/38_LongestSubstringWithoutRepeat.cs)
 
 ---
 
+## 39. Longest Repeating Character Replacement
+**Level:** Medium  
+**LeetCode:** https://leetcode.com/problems/longest-repeating-character-replacement/
+
+**Problem Statement:**  
+Find the longest substring with same characters after replacing at most k characters.
+
+**Brute Force Approach:**  
+Try all substrings and check if valid with k replacements. Time: O(n²)
+
+**Optimal Approach:**  
+Sliding window tracking max frequency. Expand window while `windowSize - maxFreq ≤ k`. **Key insight:** Only max frequency matters for replacement count. **O(n) time, O(1) space.**
+
+**Pattern Used:**  
+Sliding Window
+
+**Code:** [array/39_CharacterReplacement.cs](array/39_CharacterReplacement.cs)
+
+---
+
+## 40. Global and Local Inversions
+**Level:** Medium  
+**LeetCode:** https://leetcode.com/problems/global-and-local-inversions/
+
+**Problem Statement:**  
+Check if the number of global inversions equals local inversions in a permutation.
+
+**Brute Force Approach:**  
+Count both types of inversions explicitly. Time: O(n²)
+
+**Optimal Approach:**  
+Track prefix minimum. If any element is more than 1 position away from its sorted position, return false. **Key insight:** Local inversions are subset of global; check if non-local exist. **O(n) time, O(1) space.**
+
+**Pattern Used:**  
+Greedy / Prefix Min
+
+**Code:** [array/40_IdealPermutation.cs](array/40_IdealPermutation.cs)
+
+---
+
+## 41. Reverse String
+**Level:** Easy  
+**LeetCode:** https://leetcode.com/problems/reverse-string/
+
+**Problem Statement:**  
+Reverse a string in-place.
+
+**Brute Force Approach:**  
+Create new array with reversed elements. Time: O(n), Space: O(n)
+
+**Optimal Approach:**  
+Two pointers from both ends, swap and move inward. **Key insight:** In-place swap with two pointers. **O(n) time, O(1) space.**
+
+**Pattern Used:**  
+Two Pointers
+
+**Code:** [array/41_ReverseString.cs](array/41_ReverseString.cs)
+
+---

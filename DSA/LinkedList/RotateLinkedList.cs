@@ -1,0 +1,1 @@
+public class Solution { public ListNode RotateRight(ListNode head, int k) { if (head == null || k == 0) return head; int n = 1; ListNode tail = head; while (tail.next != null) { n++; tail = tail.next; } tail.next = head; k %= n; for (int i = 0; i < n - k; i++) tail = tail.next; ListNode newHead = tail.next; tail.next = null; return newHead; } }
