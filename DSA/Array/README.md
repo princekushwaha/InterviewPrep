@@ -31,7 +31,7 @@ Store elements in a hash map as you scan. For each element, check if its complem
 **Pattern Used:**  
 Hashing
 
-**Code:** [array/01_TwoSum.cs](array/01_TwoSum.cs)
+**Code:** [01_TwoSum.cs](01_TwoSum.cs)
 
 ---
 
@@ -51,7 +51,7 @@ Use a set to track seen elements. If you encounter an element already in the set
 **Pattern Used:**  
 Hashing / Set
 
-**Code:** [array/02_ContainsDuplicate.cs](array/02_ContainsDuplicate.cs)
+**Code:** [02_ContainsDuplicate.cs](02_ContainsDuplicate.cs)
 
 ---
 
@@ -74,7 +74,7 @@ Model the array as a linked list and apply cycle detection. The duplicate number
 **Pattern Used:**  
 Cycle Detection
 
-**Code:** [array/03_FindDuplicate.cs](array/03_FindDuplicate.cs)
+**Code:** [03_FindDuplicate.cs](03_FindDuplicate.cs)
 
 ---
 
@@ -94,7 +94,7 @@ Dutch National Flag: Three-way partitioning with one pass. Maintain regions for 
 **Pattern Used:**  
 Two Pointers / Partitioning
 
-**Code:** [array/04_SortColors.cs](array/04_SortColors.cs)
+**Code:** [04_SortColors.cs](04_SortColors.cs)
 
 ---
 
@@ -114,7 +114,7 @@ Two-pointer technique: One pointer tracks position for unique elements, another 
 **Pattern Used:**  
 Two Pointers
 
-**Code:** [array/05_RemoveDuplicates.cs](array/05_RemoveDuplicates.cs)
+**Code:** [05_RemoveDuplicates.cs](05_RemoveDuplicates.cs)
 
 ---
 
@@ -134,7 +134,7 @@ Kadane's Algorithm: Track running sum and global maximum. Reset running sum when
 **Pattern Used:**  
 Kadane / Dynamic Programming
 
-**Code:** [array/06_MaximumSubarray.cs](array/06_MaximumSubarray.cs)
+**Code:** [06_MaximumSubarray.cs](06_MaximumSubarray.cs)
 
 ---
 
@@ -154,7 +154,7 @@ Slidding Window: Expand window until sum meets target, then shrink from left to 
 **Pattern Used:**  
 Sliding Window
 
-**Code:** [array/07_MinSizeSubarraySum.cs](array/07_MinSizeSubarraySum.cs)
+**Code:** [07_MinSizeSubarraySum.cs](07_MinSizeSubarraySum.cs)
 
 ---
 
@@ -174,7 +174,7 @@ Prefix Sum with hash map: Track how many times each prefix sum has appeared. **K
 **Pattern Used:**  
 Prefix Sum
 
-**Code:** [array/08_SubarraySumEqualsK.cs](array/08_SubarraySumEqualsK.cs)
+**Code:** [08_SubarraySumEqualsK.cs](08_SubarraySumEqualsK.cs)
 
 ---
 
@@ -194,7 +194,7 @@ Boyer-Moore Voting: Use cancellation strategy - pair up different elements. **Ke
 **Pattern Used:**  
 Voting Algorithm
 
-**Code:** [array/09_MajorityElement.cs](array/09_MajorityElement.cs)
+**Code:** [09_MajorityElement.cs](09_MajorityElement.cs)
 
 ---
 
@@ -214,7 +214,7 @@ Two-pointer partitioning: Collect all non-zero elements at the front; zeros natu
 **Pattern Used:**  
 Two Pointers
 
-**Code:** [array/10_MoveZeroes.cs](array/10_MoveZeroes.cs)
+**Code:** [10_MoveZeroes.cs](10_MoveZeroes.cs)
 
 ---
 
@@ -234,7 +234,7 @@ Track current streak and global maximum. Reset streak counter when you hit a zer
 **Pattern Used:**  
 Linear Scan
 
-**Code:** [array/11_MaxConsecutiveOnes.cs](array/11_MaxConsecutiveOnes.cs)
+**Code:** [11_MaxConsecutiveOnes.cs](11_MaxConsecutiveOnes.cs)
 
 ---
 
@@ -254,7 +254,7 @@ Greedy: Track the minimum price seen so far and calculate potential profit at ea
 **Pattern Used:**  
 Greedy
 
-**Code:** [array/12_BestTimeToBuySellStock.cs](array/12_BestTimeToBuySellStock.cs)
+**Code:** [12_BestTimeToBuySellStock.cs](12_BestTimeToBuySellStock.cs)
 
 ---
 
@@ -274,7 +274,7 @@ Precompute maximum heights on left and right for each position. Water trapped = 
 **Pattern Used:**  
 Preprocessing
 
-**Code:** [array/13_TrappingRainWater.cs](array/13_TrappingRainWater.cs)
+**Code:** [13_TrappingRainWater.cs](13_TrappingRainWater.cs)
 
 ---
 
@@ -294,7 +294,7 @@ Cyclic Sort: Place each number at its natural index position. First mismatched i
 **Pattern Used:**  
 In-place Hashing
 
-**Code:** [array/14_FirstMissingPositive.cs](array/14_FirstMissingPositive.cs)
+**Code:** [14_FirstMissingPositive.cs](14_FirstMissingPositive.cs)
 
 ---
 
@@ -314,7 +314,7 @@ Sort array, fix one element, then use two-pointer technique to find pairs that c
 **Pattern Used:**  
 Two Pointers
 
-**Code:** [array/15_ThreeSum.cs](array/15_ThreeSum.cs)
+**Code:** [15_ThreeSum.cs](15_ThreeSum.cs)
 
 ---
 
@@ -334,7 +334,7 @@ Sort array, fix two elements with nested loops, then use two-pointer for remaini
 **Pattern Used:**  
 Two Pointers
 
-**Code:** [array/16_FourSum.cs](array/16_FourSum.cs)
+**Code:** [16_FourSum.cs](16_FourSum.cs)
 
 ---
 
@@ -353,7 +353,7 @@ Traverse right to left, maintaining the maximum seen so far. Any element greater
 **Pattern Used:**  
 Greedy
 
-**Code:** [array/17_LeadersInArray.cs](array/17_LeadersInArray.cs)
+**Code:** [17_LeadersInArray.cs](17_LeadersInArray.cs)
 
 ---
 
@@ -373,7 +373,7 @@ Find pivot (first descending pair from right), swap with next larger element, th
 **Pattern Used:**  
 Permutation Logic
 
-**Code:** [array/18_NextPermutation.cs](array/18_NextPermutation.cs)
+**Code:** [18_NextPermutation.cs](18_NextPermutation.cs)
 
 ---
 
@@ -393,7 +393,7 @@ Extended Boyer-Moore for two candidates. Find potential candidates via voting, t
 **Pattern Used:**  
 Voting Algorithm
 
-**Code:** [array/19_MajorityElementII.cs](array/19_MajorityElementII.cs)
+**Code:** [19_MajorityElementII.cs](19_MajorityElementII.cs)
 
 ---
 
@@ -413,7 +413,7 @@ Track both maximum and minimum product ending at each position. Consider all thr
 **Pattern Used:**  
 Dynamic Programming
 
-**Code:** [array/20_MaximumProductSubarray.cs](array/20_MaximumProductSubarray.cs)
+**Code:** [20_MaximumProductSubarray.cs](20_MaximumProductSubarray.cs)
 
 ---
 
@@ -433,7 +433,7 @@ Transform problem: Convert 0→-1, now find longest subarray with sum 0. Use pre
 **Pattern Used:**  
 Prefix Sum
 
-**Code:** [array/21_ContiguousArray.cs](array/21_ContiguousArray.cs)
+**Code:** [21_ContiguousArray.cs](21_ContiguousArray.cs)
 
 ---
 
@@ -453,7 +453,7 @@ Two cases: maximum is either non-wrapping (use Kadane) or wrapping (total - mini
 **Pattern Used:**  
 Kadane / Greedy
 
-**Code:** [array/22_MaxCircularSubarray.cs](array/22_MaxCircularSubarray.cs)
+**Code:** [22_MaxCircularSubarray.cs](22_MaxCircularSubarray.cs)
 
 ---
 
@@ -473,7 +473,7 @@ Sort intervals by start time, then merge overlapping ones in a single pass. **Ke
 **Pattern Used:**  
 Sorting + Greedy
 
-**Code:** [array/23_MergeIntervals.cs](array/23_MergeIntervals.cs)
+**Code:** [23_MergeIntervals.cs](23_MergeIntervals.cs)
 
 ---
 
@@ -493,7 +493,7 @@ Dynamic Programming: For each position, find the longest increasing subsequence 
 **Pattern Used:**  
 Dynamic Programming
 
-**Code:** [array/24_LIS_DP.cs](array/24_LIS_DP.cs)
+**Code:** [24_LIS_DP.cs](24_LIS_DP.cs)
 
 ---
 
@@ -512,7 +512,7 @@ Greedy + Binary Search: Maintain smallest possible tail for each length. Use bin
 **Pattern Used:**  
 Binary Search + Greedy
 
-**Code:** [array/25_LIS_BinarySearch.cs](array/25_LIS_BinarySearch.cs)
+**Code:** [25_LIS_BinarySearch.cs](25_LIS_BinarySearch.cs)
 
 ---
 
@@ -532,7 +532,7 @@ Two-pass: First pass computes prefix products, second pass computes suffix produ
 **Pattern Used:**  
 Prefix / Suffix
 
-**Code:** [array/26_ProductExceptSelf.cs](array/26_ProductExceptSelf.cs)
+**Code:** [26_ProductExceptSelf.cs](26_ProductExceptSelf.cs)
 
 ---
 ## 27. Reverse the Array
@@ -553,7 +553,7 @@ Time: O(n), Space: O(1)
 **Pattern Used:**  
 Two Pointers
 
-**Code:** [array/27_ReverseArray.cs](array/27_ReverseArray.cs)
+**Code:** [27_ReverseArray.cs](27_ReverseArray.cs)
 
 ---
 
@@ -574,7 +574,7 @@ Time: O(n), Space: O(1)
 **Pattern Used:**  
 Linear Scan
 
-**Code:** [array/28_MinMaxArray.cs](array/28_MinMaxArray.cs)
+**Code:** [28_MinMaxArray.cs](28_MinMaxArray.cs)
 
 ---
 
@@ -594,7 +594,7 @@ Quickselect / Heap-based selection. Average O(n).
 **Pattern Used:**  
 Selection Algorithm
 
-**Code:** [array/29_KthElement.cs](array/29_KthElement.cs)
+**Code:** [29_KthElement.cs](29_KthElement.cs)
 
 ---
 
@@ -614,7 +614,7 @@ Greedy – track farthest reachable index.
 **Pattern Used:**  
 Greedy
 
-**Code:** [array/30_JumpGame.cs](array/30_JumpGame.cs)
+**Code:** [30_JumpGame.cs](30_JumpGame.cs)
 
 ---
 
@@ -634,7 +634,7 @@ Greedy range expansion (BFS-like levels).
 **Pattern Used:**  
 Greedy / BFS Levels
 
-**Code:** [array/31_JumpGameII.cs](array/31_JumpGameII.cs)
+**Code:** [31_JumpGameII.cs](31_JumpGameII.cs)
 
 ---
 
@@ -654,7 +654,7 @@ Use HashSet to store distinct elements.
 **Pattern Used:**  
 Hashing
 
-**Code:** [array/32_UnionOfArrays.cs](array/32_UnionOfArrays.cs)
+**Code:** [32_UnionOfArrays.cs](32_UnionOfArrays.cs)
 
 ---
 
@@ -674,7 +674,7 @@ HashSet-based lookup.
 **Pattern Used:**  
 Hashing
 
-**Code:** [array/33_IntersectionOfArrays.cs](array/33_IntersectionOfArrays.cs)
+**Code:** [33_IntersectionOfArrays.cs](33_IntersectionOfArrays.cs)
 
 ---
 
@@ -696,7 +696,7 @@ Time: O(n), Space: O(1)
 **Pattern Used:**  
 Two Pointers / Greedy
 
-**Code:** [array/34_ContainerWithMostWater.cs](array/34_ContainerWithMostWater.cs)
+**Code:** [34_ContainerWithMostWater.cs](34_ContainerWithMostWater.cs)
 
 ---
 
@@ -716,7 +716,7 @@ Greedy: Sum up all positive differences between consecutive days. Capture every 
 **Pattern Used:**  
 Greedy
 
-**Code:** [array/35_StockBuySellII.cs](array/35_StockBuySellII.cs)
+**Code:** [35_StockBuySellII.cs](35_StockBuySellII.cs)
 
 ---
 
@@ -736,7 +736,7 @@ Triple reversal: Reverse entire array, then reverse first k elements, then rever
 **Pattern Used:**  
 Array Reversal
 
-**Code:** [array/36_RotateArray.cs](array/36_RotateArray.cs)
+**Code:** [36_RotateArray.cs](36_RotateArray.cs)
 
 ---
 
@@ -756,7 +756,7 @@ Three pointers starting from the end, filling from back to front. **Key insight:
 **Pattern Used:**  
 Two Pointers
 
-**Code:** [array/37_MergeSortedArray.cs](array/37_MergeSortedArray.cs)
+**Code:** [37_MergeSortedArray.cs](37_MergeSortedArray.cs)
 
 ---
 
@@ -776,7 +776,7 @@ Sliding window with hash map tracking character positions. Expand right, contrac
 **Pattern Used:**  
 Sliding Window
 
-**Code:** [array/38_LongestSubstringWithoutRepeat.cs](array/38_LongestSubstringWithoutRepeat.cs)
+**Code:** [38_LongestSubstringWithoutRepeat.cs](38_LongestSubstringWithoutRepeat.cs)
 
 ---
 
@@ -796,7 +796,7 @@ Sliding window tracking max frequency. Expand window while `windowSize - maxFreq
 **Pattern Used:**  
 Sliding Window
 
-**Code:** [array/39_CharacterReplacement.cs](array/39_CharacterReplacement.cs)
+**Code:** [39_CharacterReplacement.cs](39_CharacterReplacement.cs)
 
 ---
 
@@ -816,7 +816,7 @@ Track prefix minimum. If any element is more than 1 position away from its sorte
 **Pattern Used:**  
 Greedy / Prefix Min
 
-**Code:** [array/40_IdealPermutation.cs](array/40_IdealPermutation.cs)
+**Code:** [40_IdealPermutation.cs](40_IdealPermutation.cs)
 
 ---
 
@@ -836,6 +836,6 @@ Two pointers from both ends, swap and move inward. **Key insight:** In-place swa
 **Pattern Used:**  
 Two Pointers
 
-**Code:** [array/41_ReverseString.cs](array/41_ReverseString.cs)
+**Code:** [41_ReverseString.cs](41_ReverseString.cs)
 
 ---

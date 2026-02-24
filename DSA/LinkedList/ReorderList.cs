@@ -1,9 +1,14 @@
-public class Solution {
-    public void ReorderList(ListNode head) {
-        if (head == null || head.next == null) return;
+public class Solution
+{
+    public void ReorderList(ListNode head)
+    {
+        if (head == null || head.next == null)
+            return;
 
         ListNode slow = head, fast = head;
-        while (fast.next != null && fast.next.next != null) {
+
+        while (fast.next != null && fast.next.next != null)
+        {
             slow = slow.next;
             fast = fast.next.next;
         }
@@ -12,7 +17,8 @@ public class Solution {
         slow.next = null;
         ListNode first = head;
 
-        while (first != null && second != null) {
+        while (first != null && second != null)
+        {
             ListNode t1 = first.next;
             ListNode t2 = second.next;
             first.next = second;
@@ -22,14 +28,18 @@ public class Solution {
         }
     }
 
-    private ListNode Reverse(ListNode head) {
+    private ListNode Reverse(ListNode head)
+    {
         ListNode prev = null;
-        while (head != null) {
+
+        while (head != null)
+        {
             ListNode next = head.next;
             head.next = prev;
             prev = head;
             head = next;
         }
+
         return prev;
     }
 }
